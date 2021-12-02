@@ -83,6 +83,35 @@ fn main() {
     let a1 = [1, 2, 3, 4];
     // 数组类型： [类型; 长度]
     let a2 = [3;5]; // 等价于 let a2: [i32; 5] = [3,3,3,3,3]
-    println!("{:?}", a2)
+    println!("{:?}", a2);
 
+    /*
+     * 函数
+    */
+    
+    another_function();
+
+    // 函数的参数:parameters, arguments,对应形参和实参
+    
+    
+    // 函数返回值，在->后面申明返回值类型
+    //返回值就是函数题中最后一个表达式的值，如果想提前返回
+    // 需要使用return关键字，并指定一个值
 }
+
+// 使用fn关键字
+fn another_function() {
+    println!("another_function");
+}
+
+fn five() -> i32 {
+    5
+}
+
+
+//这是单行注释
+
+/*
+ * 这是多行
+ * 注释
+*/
