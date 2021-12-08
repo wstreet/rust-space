@@ -1,19 +1,6 @@
 
 // module
-mod front_of_house {
-  pub mod hosting {
-    pub fn add_to_waitlist() {
-        println!("add_to_waitlist")
-    }
-
-    fn some_function() {
-        
-    }
-
-    fn seat_at_table() {
-        
-    }
-  }
+mod front_of_house;
 
   mod serving{
     fn take_order() {
@@ -24,7 +11,7 @@ mod front_of_house {
         
     }
   }
-}
+
 
 // use 引入模块,私有模块不会引入
 // use front_of_house::hosting; // 相对路径
